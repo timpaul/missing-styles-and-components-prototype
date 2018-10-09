@@ -1,0 +1,67 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// Import GOV.UK Frontend
+@import "node_modules/govuk-frontend/all";
+
+// Patterns that aren't in Frontend
+@import "patterns/check-your-answers";
+@import "patterns/task-list";
+
+// Components that aren't in Frontend
+@import "patterns/description-list";
+
+
+// Propose we add this override class to GOV.UK Frontend
+
+.govuk-\!-text-align-right{
+    text-align: right !important;
+}
+
+
+// Inline lists
+.govuk-list--inline{
+    margin-bottom: 0;
+}
+
+.govuk-list--inline > li {
+    display: inline;
+}
+
+.govuk-list--comma > li::before {
+    content: ", ";
+}
+
+.govuk-list--bar > li::before {
+	content: "";
+	margin: 0 10px;
+    border-right: 1px solid #bfc1c3;   
+}
+
+.govuk-list--chevron > li::before {
+    content: ">";
+    padding: 0 10px;
+    color: #6f777b;
+}
+
+.govuk-list--comma > li:first-child::before,
+.govuk-list--bar > li:first-child::before ,
+.govuk-list--chevron > li:first-child::before  {
+    content: none;
+    display: none;
+}
+
+
+// Example panel
+.app-example{
+	padding: 30px 30px 10px;
+	border: 1px solid #bfc1c3;
+	margin: 30px 0;
+}
+
+// Code block
+code {
+    padding: 0 5px;
+    color: #d14;
+    background-color: #f8f8f8;
+}

@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+
+<!-- Adds a class to increase vertical spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block pageTitle %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Service name goes here
+      </h1>
+
+
+      <ol class="govuk-list govuk-list--number">
+        <li class="govuk-body-l govuk-!-font-weight-bold govuk-!-margin-bottom-9">          
+          <h2 class="govuk-heading-m">
+            Check before you start
+          </h2>
+          <dl class="govuk-description-list govuk-description-list--tabular">
+            <div class="govuk-description-list__group">
+              <dt class="govuk-!-padding-bottom-2 govuk-!-font-weight-regular">
+                <a href="#" aria-describedby="eligibility-status">
+                    Check eligibility
+                </a>
+              </dt>
+              <dd class="govuk-!-text-align-right">
+                  <strong class="govuk-tag" id="eligibility-status">Completed</strong>
+              </dd>
+            </div>
+            <div class="govuk-description-list__group">
+              <dt class="govuk-!-padding-bottom-2 govuk-!-font-weight-regular">
+                <a href="#" aria-describedby="read-declaration-status">
+                    Read declaration
+                </a>
+              </dt>
+              <dd class="govuk-!-text-align-right">
+                  <strong class="govuk-tag" id="read-declaration-status">Completed</strong>
+              </dd>
+            </div>
+          </dl>
+        </li>
+        <li class="govuk-body-l govuk-!-font-weight-bold govuk-!-margin-bottom-9">
+          <h2 class="govuk-heading-m">
+            Prepare application
+          </h2>
+          <dl class="govuk-description-list govuk-description-list--tabular">
+            <div class="govuk-description-list__group">
+              <dt class="govuk-!-padding-bottom-2 govuk-!-font-weight-regular">
+                <a class="" href="#" aria-describedby="company-information-status">
+                    Company information
+                </a>
+              </dt>
+              <dd class="govuk-!-text-align-right">
+                  <strong class="govuk-tag" id="company-information-status">Completed</strong>
+              </dd>
+            </div>
+            <div class="govuk-description-list__group">
+              <dt class="govuk-!-padding-bottom-2 govuk-!-font-weight-regular">
+                <a href="#" aria-describedby="contact-details-status">
+                    Your contact details
+                </a>
+              </dt>
+              <dd class="govuk-!-text-align-right">
+                  <strong class="govuk-tag" id="contact-details-status">Completed</strong>
+              </dd>
+            </div>
+            <div class="govuk-description-list__group">
+              <dt class="govuk-!-padding-bottom-2 govuk-!-font-weight-regular">
+                <a href="#" aria-describedby="list-convictions-status">
+                    List convictions
+                </a>
+              </dt>
+              <dd class="govuk-!-text-align-right">
+                  <strong class="govuk-tag govuk-visually-hidden" id="list-convictions-status">Not completed</strong>
+              </dd>
+            </div>
+            <div class="govuk-description-list__group">
+              <dt class="govuk-!-padding-bottom-2 govuk-!-font-weight-regular">
+                <a href="#" aria-describedby="provide-financial-evidence-status">
+                    Provide financial evidence
+                </a>
+              </dt>
+              <dd class="govuk-!-text-align-right">
+                  <strong class="govuk-tag govuk-visually-hidden" id="provide-financial-evidence-status">Not completed</strong>
+              </dd>
+            </div>
+            <div class="govuk-description-list__group">
+              <dt class="govuk-!-padding-bottom-2 govuk-!-font-weight-regular">
+                <a href="#" aria-describedby="medical-information-status">
+                    Give medical information
+                </a>
+              </dt>
+              <dd class="govuk-!-text-align-right">
+                  <strong class="govuk-tag" id="medical-information-status">Completed</strong>
+              </dd>
+            </div>
+          </dl>           
+        </li>
+        <li class="govuk-body-l govuk-!-font-weight-bold govuk-!-margin-bottom-9">
+          <h2 class="govuk-heading-m">
+            Apply
+          </h2>
+          <dl class="govuk-description-list govuk-description-list--tabular">
+            <div class="govuk-description-list__group">
+              <dt class="govuk-!-padding-bottom-2 govuk-!-font-weight-regular">
+                <a href="#" aria-describedby="submit-and-pay-status">
+                    Submit and pay
+                </a>
+              </dt>
+              <dd class="govuk-!-text-align-right">
+                  <strong class="govuk-tag govuk-visually-hidden" id="submit-and-pay-status">Not completed</strong>
+              </dd>
+            </div>
+          </dl>            
+        </li>
+      </ol>
+ 
+
+    </div>
+  </div>
+
+{% endblock %}

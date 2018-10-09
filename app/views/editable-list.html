@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Editable list
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Editable lists
+      </h1>
+
+      <div class="app-example">
+        <h2 class="govuk-heading-m">
+          Account managers
+        </h2>
+
+        <dl class="govuk-description-list govuk-description-list--tabular">
+          <div class="govuk-description-list__group">
+            <dt>
+              Sarah Philips
+            </dt>
+            <dd class="govuk-!-text-align-right">
+              <ul class="govuk-list govuk-list--inline govuk-list--bar">
+                <li><a href="#">Edit</a></li>
+                <li><a href="#">Remove</a></li>
+              </ul>
+            </dd>
+          </div>
+          <div class="govuk-description-list__group">
+            <dt>
+              Henry Smith
+            </dt>
+            <dd class="govuk-!-text-align-right">
+              <ul class="govuk-list govuk-list--inline govuk-list--bar">
+                <li><a href="#">Edit</a></li>
+                <li><a href="#">Remove</a></li>
+              </ul>
+            </dd>
+          </div>
+          <div class="govuk-description-list__group">
+            <dt>
+              Alex Carrington
+            </dt>
+            <dd class="govuk-!-text-align-right">
+              <ul class="govuk-list govuk-list--inline govuk-list--bar">
+                <li><a href="#">Edit</a></li>
+                <li><a href="#">Remove</a></li>
+              </ul>
+            </dd>
+          </div>   
+        </dl>
+
+        <p><a href="">Add another account manager</a></p>
+
+      </div>
+
+    </div>
+  </div>
+{% endblock %}

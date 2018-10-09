@@ -1,0 +1,133 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Description lists
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Description lists
+      </h1>
+
+
+      <p class="govuk-body">
+        Use a description list to write out terms and their associated descriptions.
+        For example, a glossary of terms, document meta data or a summary of form responses.
+      </p>
+
+
+      <div class="app-example">
+        <dl class="govuk-description-list">
+          <div class="govuk-description-list__group">
+            <dt>
+              A-road
+            </dt>
+            <dd>
+              Hyphenated.
+            </dd>
+          </div>
+
+          <div class="govuk-description-list__group">
+            <dt>
+              armed forces
+            </dt>
+            <dd>
+              Lower case.
+            </dd>
+          </div>
+
+          <div class="govuk-description-list__group">
+            <dt>
+              arm's length body
+            </dt>
+            <dd>
+              Apostrophe, no hyphen.
+            </dd>
+          </div>
+
+          <div class="govuk-description-list__group">
+            <dt>
+              assembly ministers
+            </dt>
+            <dd>
+              Lower case.
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+
+      <h2 class="govuk-heading-m">
+        Tabular description lists
+      </h2>
+
+
+
+      <div class="app-example">
+        <dl class="govuk-description-list govuk-description-list--tabular">
+          <div class="govuk-description-list__group">
+            <dt>
+              Name
+            </dt>
+            <dd>
+              Sarah Philips
+            </dd>
+          </div>
+
+          <div class="govuk-description-list__group">
+            <dt>
+              Date of birth
+            </dt>
+            <dd>
+              5 January 1978
+            </dd>
+          </div>
+
+          <div class="govuk-description-list__group">
+            <dt>
+              Home address
+            </dt>
+            <dd>
+              72 Guild Street<br />
+              London<br />
+              SE23 6FH
+            </dd>
+          </div>
+
+          <div class="govuk-description-list__group">
+            <dt>
+              Contact details
+            </dt>
+            <dd>
+              07700 900457<br />
+              sarah.phillips@example.com
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <p class="govuk-body">
+        Use a tabular description list if:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>there's only one description per term</li>
+        <li>your users need to easily scan the terms or descriptions
+      </ul>
+
+      <p class="govuk-body">
+        If you have multiple columns of mainly numerical data, use a table component instead.
+      </p>
+
+
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,101 @@
+  %govuk-description-list {
+    @include govuk-font($size: 19);
+    @include govuk-text-colour;
+    margin-top: 0;
+    @include govuk-responsive-margin(4, "bottom");
+    padding-left: 0;
+
+    // Add a top margin for nested lists
+    %govuk-description-list {
+      margin-top: govuk-spacing(2);
+    }
+  }
+
+  .govuk-description-list__group{
+    margin-bottom: govuk-spacing(5);
+  }
+
+  .govuk-description-list--tabular{
+
+    @include govuk-media-query($from: tablet) {
+      display: table;
+      width: 100%;
+    }
+
+    .govuk-description-list__group {
+      position: relative;
+      border-bottom: 1px solid $govuk-border-colour;
+
+      @include govuk-media-query($from: tablet) {
+        display: table-row;
+        border-bottom-width: 0;
+      }
+    }
+
+
+    .govuk-description-list__group:first-child dt,
+    .govuk-description-list__group:first-child dd{
+      @include govuk-media-query($from: tablet) {
+        padding-top: 0;
+      }
+    }
+
+    .govuk-description-list__group > dt,
+    .govuk-description-list__group > dd{
+      display: block;
+      @include govuk-media-query($from: tablet) {
+        display: table-cell;
+        border-bottom: 1px solid $govuk-border-colour;
+        padding: govuk-em(12, 19) govuk-em(20, 19) govuk-em(9, 19) 0;
+      }
+    }
+
+    // the cells in the right-hand column don't need right padding
+    .govuk-description-list__group > dd:last-child{
+      padding-right: 0;
+    }
+
+  }
+
+
+  .govuk-description-list__group > dt {
+
+    font-weight: bold;
+
+    @include govuk-media-query($from: tablet) {
+      margin-bottom: govuk-spacing(1);
+    }
+  }
+
+  .govuk-description-list__group > dd {
+
+    margin-left: 0;
+
+    @include govuk-media-query($from: tablet) {
+      margin-bottom: govuk-spacing(1);
+    }
+  }
+
+  %govuk-description-list a {
+    &:link {
+      color: $govuk-link-colour;
+    }
+
+    &:visited {
+      color: $govuk-link-visited-colour;
+    }
+
+    &:hover {
+      color: $govuk-link-hover-colour;
+    }
+
+    &:active {
+      color: $govuk-link-active-colour;
+    }
+  }
+
+
+  .govuk-description-list {
+    @extend %govuk-description-list;
+  }
+
